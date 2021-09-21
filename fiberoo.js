@@ -21,9 +21,9 @@ function numsToStrings(arr1) {
 console.log(numsToStrings(arr));
 
 function numEvenNums(arr2) {
-  const evens = _.filter(arr2, function (num) { return num % 2 == 0; });
+  const evens = _.filter(arr2, function (num) { return num % 2 === 0; });
   const sum = _.reduce(evens, function (memo, num) { return memo + num; }, 0);
   return sum;
 }
 
-console.log(numsEvenNums(arr));
+console.log(numEvenNums(arr));
